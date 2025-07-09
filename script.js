@@ -1,6 +1,8 @@
 const loveButton = document.getElementById('loveButton');
 const message = document.getElementById('message');
 const heart = document.getElementById('heart');
+const revealButton = document.getElementById('revealButton');
+const declaration = document.getElementById('declaration');
 
 const messages = [
     "Meu coração tem ciúmes de você!",
@@ -22,6 +24,13 @@ loveButton.addEventListener('click', () => {
     message.classList.remove('hidden');
     message.classList.add('visible');
     heart.style.display = 'inline';
+});
+
+revealButton.addEventListener('click', () => {
+    declaration.classList.remove('hidden');
+    declaration.classList.add('visible');
+    declaration.scrollIntoView({ behavior: 'smooth' });
+    revealButton.style.display = 'none';
 });
 
 particlesJS('particles-js', {
