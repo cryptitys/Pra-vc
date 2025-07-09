@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d1a;
+    color: #fff;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.container {
+    background: rgba(20, 20, 40, 0.85);
+    padding: 40px 60px;
+    border-radius: 25px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    border: 2px dashed #ff69b4;
+}
+
+.title {
+    font-family: 'Pacifico', cursive;
+    color: #FFD700;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 0 0 15px #FFD700;
+}
+
+.cta-button {
+    background: linear-gradient(135deg, #ff69b4, #ff1493);
+    color: #fff;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-4px);
+    background: linear-gradient(135deg, #ff1493, #db0b8d);
+}
+
+.message-text {
+    margin-top: 25px;
+    font-size: 1.4em;
+    color: #FFD700;
+    font-weight: bold;
+    text-shadow: 0 0 12px #FFD700;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.message-text.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden {
+    display: none;
+}
+
+.footer-message {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    font-size: 1em;
+    font-family: 'Pacifico', cursive;
+    color: #ffb6c1;
+    text-shadow: 0 0 10px #ffb6c1;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
