@@ -2,12 +2,17 @@ const loveButton = document.getElementById('loveButton');
 const message = document.getElementById('message');
 
 const messages = [
-    "Meu coração bate mais forte por você!",
-    "Você é a razão do meu sorriso!",
-    "Cada momento ao seu lado é um presente!",
-    "Eu te amo mais do que as palavras podem dizer!",
-    "Você ilumina meus dias, mesmo no escuro.",
-    "Seu olhar é o meu pôr do sol favorito."
+    "Meu coração tem ciúmes de você!",
+    "Nao sei bem o pq, mais vc é importantepra mim!",
+    "Adoro encher seu saco ksksk!",
+    "Nao sei se amor, mais se for, que doido ksksksks!",
+    "Mesmo que vocêja brigou bastante cmg,",
+    "ainda gosto de fazer parte do seu dia",
+    "Não sou uma das melhores pessoas, mais...",
+    "Bom, acho q ja ta bem fofo ksksks...",
+    "Não mandei muita mensagem ultimamente,"
+    "pq pensei q seria melhor não atrapalhar vc"
+    "acho que ja ta bom ate aq ksksks"
 ];
 
 loveButton.addEventListener('click', () => {
