@@ -7,6 +7,8 @@ body {
     background-color: #0d0d1a;
     color: #fff;
     position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 #particles-js {
@@ -35,7 +37,7 @@ body {
     font-family: 'Pacifico', cursive;
     color: #FFD700;
     font-size: 2.5em;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     text-shadow: 0 0 15px #FFD700;
 }
 
@@ -49,7 +51,8 @@ body {
     cursor: pointer;
     box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
     transition: all 0.3s ease;
-    margin-top: 15px;
+    margin: 10px 0; /* espaçamento vertical entre os botões */
+    display: inline-block;
 }
 
 .cta-button:hover {
@@ -92,13 +95,15 @@ body {
     100% { transform: scale(1); }
 }
 
+/* Texto da declaração */
 .declaration-text {
-    margin-top: 30px;
+    margin-top: 50px;
     font-family: 'Pacifico', cursive;
     font-size: 1.1em;
     color: #ffb6c1;
     text-shadow: 0 0 8px #ffb6c1;
     line-height: 1.6;
+    padding: 0 10px;
 }
 
 /* Efeito ao rolar */
